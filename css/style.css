@@ -3,7 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+.clr{
+	clear: both;
+}
 
 
 .header-height{
@@ -13,7 +15,7 @@
 	height: 50px;
 }
 .content-height{
-	height: 700px;
+	height: 2000px;
 }
 .smallfooter-height{
 	height: 200px;
@@ -112,10 +114,16 @@
 	background: red;
 	border-radius: 50%;
 	float: left;
+	transform: rotate(0deg) scale(1);
+	transition: 2s;
 	
 }
 .div-raihan-radious img{
 	border-radius: 50%;
+}
+.div-raihan-radious:hover{
+	transform: rotate(360deg) scale(1.5);
+	
 }
 
 .div-mimu-radious{
@@ -125,10 +133,14 @@
 	background: red;
 	border-radius: 50%;
 	float: left;
-	
+	transform: rotate(0deg) scale(1);
+	transition: 2s;
 }
 .div-mimu-radious img{
 	border-radius: 50%;
+}
+.div-mimu-radious:hover{
+	transform: rotate(360deg) scale(1.5);
 }
 .div-raihan-square{
 	margin: 50px 5px 5px 0px;
@@ -147,4 +159,52 @@
 	border-radius: 50%;
 	float: left;
 	transform: skewY(-25deg);
+}
+.flag{
+	margin-top: 100px;
+}
+.grean-area{
+	height: 350px;
+	width: 700px;
+	background: green;
+	float: left;
+}
+.red-area{
+	margin: 50px 200px;
+	height: 250px;
+	width: 250px;
+	background: red;
+	border-radius: 50%;
+	float: left;
+}
+.rainbow{
+	margin-top:50px;
+	height: 200px;
+	width: 200px;
+	background: linear-gradient(to left,red, orange, yellow, green, blue, indigo, violet);
+	transform: rotate(0deg) scale(1);
+
+	transition: 2s;
+}
+.rainbow:hover{
+	transform: rotate(360deg) scale(1.5);
+}
+
+.animation-part{
+
+}
+.picture-animation{
+	margin-top: 50px;
+	height: 200px;
+	width: 300px;
+	animation: kaniz;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes kaniz{
+	 0%{background: url("../images/forgit.jpg");}
+	 50%{background: url("../images/r1.jpg");}
+	 100%{background: url("../images/raihanuddin.jpg");}
 }
